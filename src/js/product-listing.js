@@ -1,7 +1,7 @@
 window.onload = async () => {
     let listing;
 
-    await fetch('/src/listings.json')
+    await fetch('src/listings.json')
         .then(response => response.json())
         .then(response => {
             listing = response;
@@ -21,7 +21,7 @@ window.onload = async () => {
             let listingDiv = document.createElement('div');
             listingDiv.className = 'item';
             listingDiv.innerHTML = `
-            <img src="/src/img/products/${listing[c].image_name}" alt="featured-item">
+            <img src="src/img/products/${listing[c].image_name}" alt="featured-item">
             <div class="item-info">
                 <h3>${listing[c].name}</h3>
                 <p>LKR ${listing[c].price}</p>
@@ -38,7 +38,7 @@ window.onload = async () => {
         let shopListingDiv = document.createElement('div');
         shopListingDiv.className = 'item';
         shopListingDiv.innerHTML = `
-        <img src="/src/img/products/${listing[c].image_name}" alt="shop-item">
+        <img src="src/img/products/${listing[c].image_name}" alt="shop-item">
         <div class="item-info">
             <h3>${listing[c].name}</h3>
             <p>LKR ${listing[c].price}</p>
