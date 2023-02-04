@@ -4,7 +4,7 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 let info;
 
 window.onload = setTimeout(async function (){
-    await fetch('src/data.json')
+    await fetch('/src/data.json')
         .then(response => response.json())
         .then(response => {
             info = response;
