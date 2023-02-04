@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1", 
+        "name": "Men Lightning Decor Ring",
+        "price": "1900",
+        "image_name": "312500499_680247700100102_5412001745578981280_n.jpg",
+        "featured": "true"
+    },
+    {
+        "id": "2",
+        "name": "WoMen Lightning Decor Ring",
+        "price": "2900",
+        "image_name": "312500499_680247700100102_5412001745578981280_n.jpg",
+        "featured": "false"
+    }
+]

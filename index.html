@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/logo.png" type="image/x-icon">
+    <title>The Authentic Corner</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+</head>
+<body class="preload">
+    <section id="navbar">
+        <input type="checkbox" id="menu-btn">
+        <label class="nav-btn" for="menu-btn">
+            <span class="nav-btn__line"></span>
+            <span class="nav-btn__line"></span>
+            <span class="nav-btn__line"></span>
+        </label>
+        <div class="nav-bar">
+            <ul>
+                <li class="active"><a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a></li>
+                <li><a onclick="goToByScroll('featured')" href="#featured">
+                    <span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
+                    <span class="title">Featured</span>
+                </a></li>
+                <li><a onclick="goToByScroll('shop')" href="#shop">
+                    <span class="icon"><ion-icon name="bag-outline"></ion-icon></span>
+                    <span class="title">Products</span>
+                </a></li>
+                <li><a onclick="goToByScroll('about-us')" href="#about-us">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="title">About</span>
+                </a></li>
+                <li><a onclick="goToByScroll('contact-us')" href="#contact-us">
+                    <span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+                    <span class="title">Contact</span>
+                </a></li>
+            </ul>
+
+            <div class="logo">
+                <img src="src/img/logo.png" alt="logo">
+            </div>
+        </div>
+    </section>
+    <div class="brand-name">
+        <h1>The Authentic Corner</h1>
+        <p>Authenticity is the key to success</p>
+    </div>
+    <div class="scroll-pointer">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+    <section id="page-content">
+        <div class="featured" id="featured">
+            <div class="gallery">
+                <div class="col">
+                    <!-- <div class="item">
+                        <img src="src/img/products/312914770_419787397033514_553048847413350908_n.jpg" alt="featured-1">
+                        <div class="item-info">
+                            <h3>Featured Item 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                            <a href="featured.html">Buy Now</a>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="col"></div>
+
+                <div class="col"></div>
+
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="attributes" id="attributes">
+            <div class="text-area">
+                <h3>Quality</h3>
+                <p>We import the heights quality of the products we provide to our customers in order to reach maximum customer sastisfaction</p>
+            </div>
+            <div class="text-area">
+                <h3>Cost</h3>
+                <p>We offer a wide range of products at competitive prices, including accessories, stylish jewelry, and trendy sunglasses</p>
+            </div>
+            <div class="text-area">
+                <h3>Customer Satisfaction</h3>
+                <p>We strive to provide an exceptional shopping experience for our customers, offering a wide range of high-quality products at competitive prices, and delivering outstanding customer service. Our commitment to customer satisfaction has earned us a reputation for excellence.</p>
+            </div>
+            <div class="text-area">
+                <h3>Authenticity</h3>
+                <p>We carefully source our designer handbags, jewelry, and sunglasses from trusted suppliers and manufacturers, ensuring that our customers receive only genuine, high-quality products.</p>
+            </div>
+            <div class="divider">
+                <span class="__line"></span>
+                <span class="__dot"></span>
+            </div>
+        </div>
+        <div class="shop" id="shop">
+            <div class="gallery">
+                <div class="col"></div>
+
+                <div class="col"></div>
+
+                <div class="col"></div>
+
+                <div class="col"></div>
+
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="about-us" id="about-us">
+            <div class="container">
+                <h3>Est. 2022</h3>
+                <p>Our brand was established in 2022. We have served various customers since. Always providing satisfactory services and products</p>
+            </div>
+            <div class="container">
+                <h3>Location</h3>
+                <p>We are located in Colombo, Sri Lanka. We deliver all around the island.</p>
+            </div>
+            <div class="container">
+                <h3>Products</h3>
+                <p>All our products are imported from trusted manufacturers and retailers, and we throughly checked before listed.</p>
+            </div>
+        </div>
+        <div class="contact-us" id="contact-us">
+            <div class="container">
+                <h3>Contact Us</h3>
+                <p>For any queries, please contact us via the following methods. <br> We are here to help you with your inquiries</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p class="contact-num">077 123 4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p class="email">test@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Follow Us On</h3>
+                <div class="socials">
+                    <a href="" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 | The Authentic Corner | Design & Developed By PebbleSands</p>
+        </footer>
+    </section>
+
+    <!-- Script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/product-listing.js"></script>
+</body>
+</html>
