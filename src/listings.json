@@ -8,9 +8,37 @@
     },
     {
         "id": "2",
-        "name": "WoMen Lightning Decor Ring",
-        "price": "2900",
-        "image_name": "312500499_680247700100102_5412001745578981280_n.jpg",
-        "featured": "false"
+        "name": "Men Geometric Charm Necklace",
+        "price": "1600",
+        "image_name": "312914770_419787397033514_553048847413350908_n.jpg",
+        "featured": "true"
+    },
+    {
+        "id": "3",
+        "name": "Men simple Stainless ring",
+        "price": "1799",
+        "image_name": "326415409_5799237070183061_9035094415650746260_n.jpg",
+        "featured": "true"
+    },
+    {
+        "id": "4",
+        "name": "Men Lightning Charm Necklace",
+        "price": "1800",
+        "image_name": "326422540_1167054333948756_616202765146484758_n.jpg",
+        "featured": "true"
+    },
+    {
+        "id": "5",
+        "name": "Men stainless Steel Bracelet",
+        "price": "1899",
+        "image_name": "326305245_3345936229015883_1311485667466043806_n.jpg",
+        "featured": "true"
+    },
+    {
+        "id": "6",
+        "name": "11pcs Elegant Faux Pearl Ring set",
+        "price": "2200",
+        "image_name": "326330568_631978682067722_5884802201358511551_n.jpg",
+        "featured": "true"
     }
 ]

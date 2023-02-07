@@ -4,12 +4,10 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 let info;
 
 window.onload = setTimeout(async function (){
-    await fetch('src/data.json')
-        .then(response => response.json())
-        .then(response => {
-            info = response;
-        }
-    );
+    const results = await Promise.allSettled([ 
+        await fetch('src/data.json').then(response => response.json()).then(response => { info = response; })
+    ]);
+
     document.body.className="";
     $('#page-content').css({'display': 'flex'})
     setTimeout(function(){
@@ -19,14 +17,18 @@ window.onload = setTimeout(async function (){
 
 window.onload = setTimeout(function(){
     $('.brand-name').css({'height': '20vh'});
-    $('.brand-name h1').css({'font-size': '30px'});
+    if (window.innerWidth < 550){
+        $('.brand-name h1').css({'font-size': '20px'});
+    } else {
+        $('.brand-name h1').css({'font-size': '30px'});
+    }
     $('.brand-name p').css({'font-size': '10px'});
     $('.scroll-pointer').css({'opacity': '0'});
     setTimeout(function(){
         $('.scroll-pointer').css({'display': 'none'});
     }, 500);
 
-    document.querySelector('.contact-info .contact-num').innerHTML = `${info.contact_num}`;
+    document.querySelector('.contact-info .contact-num').innerHTML = (`${info.contactNum}`);
     document.querySelector('.contact-info .email').innerHTML = `${info.email}`;
     document.querySelector('.socials a.instagram').setAttribute('href', `${info.instagram}`);
     document.querySelector('.socials a.facebook').setAttribute('href', `${info.facebook}`);
