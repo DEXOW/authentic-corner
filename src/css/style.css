@@ -37,7 +37,7 @@ ion-icon {
 .nav-bar .logo{
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
 }
 .nav-bar .logo img{
     mix-blend-mode: color-burn;
@@ -256,7 +256,7 @@ ion-icon {
     position: fixed;
     top: 90vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -277,13 +277,13 @@ ion-icon {
 
 @keyframes scroll-pointer{
     0%{
-        transform: translateX(-50%) translateY(0) scale(1.1);
+        transform: translateX(50%) translateY(0) scale(1.1);
     }
     50%{
-        transform: translateX(-50%) translateY(10px) scale(1);
+        transform: translateX(50%) translateY(10px) scale(1);
     }
     100%{
-        transform: translateX(-50%) translateY(0) scale(1.1);
+        transform: translateX(50%) translateY(0) scale(1.1);
     }
 }
 
@@ -430,6 +430,7 @@ ion-icon {
     transform: translateX(-50%);
     width: 5px;
     height: 80%;
+    border-radius: 10px;
     background-color: #c3b7a3;
     z-index: 1;
 }
@@ -493,7 +494,7 @@ ion-icon {
     color: #e7dcca;
     font-family: Gidolinya;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -577,9 +578,14 @@ footer p{
 @media (max-width: 550px) {
 
     .brand-name h1{
-        font-size: 20px!important;
+        font-size: 30px;
         letter-spacing: 5px;
     }
+
+    .gallery .item{
+        max-width: 150px;
+    }
+
     .text-area{
         margin: 20px 20px;
     }
@@ -592,6 +598,9 @@ footer p{
 
     .about-us{
         margin: 50px 20px 50px;
+    }
+    .about-us .container h3{
+        font-size: 25px;
     }
     .about-us .container p{
         width: 90%;
