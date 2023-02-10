@@ -441,7 +441,7 @@ ion-icon {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin: 50px 20px;
+    margin: 50px 0;
 }
 
 /* -- About Us -- */
